@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>My Learning Journal</title>
+</head>
+<body>
+    <nav>
+        <div id="logo-container">
+        <img class="logo" src="images/logo.png" alt="my logo image for my journal-blog">
+        <h2>My learning journal</h2>
+        </div>
+        <div id="nav-sites">
+            <span class="nav-sites"><a href="index.html">Home</a></span>
+            <span class="nav-sites active"><a href="blog.html">Blog</a></span>
+            <span class="nav-sites"><a href="about.html">About Me</a></span>
+        </div>
+    </nav>
+    <main>
+        <div class="heading">
+            <p class="heading-text heading-top">October 23, 2022</p>
+            <h1>My project, part I</h1>
+            
+            <p class="heading-text">I have now done 3 JavaScript modules at Scrimba. Is this enough for me to get further
+                with my project? 
+            </p>
+            <img class="blog-content-img" src="images/blog-image-05.png">
+        </div>
+
+        <article class="article-page2">
+            <h3>Understanding</h3>
+            <p>The first thing I noticed after starting with Scrimba, is that I understand much more of coding I have seen or 
+                used in the past. You can find much on internet that is freecode, and just do some "tweeks" on it to suit
+                what you need. But it is quite different when you actually understand what you're doing!
+            </p>
+            <p>As I have mentioned in the <a href="about.html">About me</a> section, I have seen a script that I want to - not 
+                copy, but to use as a foundation for making my own. It will be nowhere simular to that, but use same teqniques.
+                So, after 3 courses, I know what I have to do. But did Scrimba teach me how? Lets check, step by step through what
+                I need to do: 
+
+
+            <h3>Step one, the url</h3>
+            <p>I need the url for my site to be like this: www.mysite.com/name - so no index.html or another file. 
+            this way, all sites use same index-file. It is not necessary, but it looks better, and I need to grab hold
+            of the "name" in both my php and JavaScript. Have not found this solution on Scrimba, but found it by Googling.
+            Solution is to add a line of code in your .htaccess file (if you have Apache server): DirectoryIndex index.html</p>
+
+            
+            <p>I have not tested this yet, as I am still working on the project on Live Server through Visual Code (so locally).
+            </p>
+            <h3>Step 2, combining 2 arrays</h3>
+            <p>When I get the "name", I want to grap this through slicing, and save it as a variable. Next: I have two arrays.
+                The first one (lets call it "a") is an array with default object keys and values. The second one ("b"), holds
+                objects with same keys, but with values that should replace those in "a". And of course, only a few of them in
+                each object; only those who is different than the defaults in Array a. Each of these objects have a name-key, and I 
+                must find the object in "b" that has the same name as the "name" I have stored in the variable.
+            </p>
+            <p>This was easy after learning JavaScript: 
+                <ul>
+                    <li>const nameVariable = "name" (this one still hardcoded)</li>
+                    <li>const findName = b[`${nameVariable}`]</li>
+                </ul>
+            Thats it. Not so hard. Next, I need to mix array a and b, and do it so the new values in array b override the 
+            ones in a-array. This one I had to find on the net, and also that was easy: 
+                <ul>
+                    <li>const c = {...a,...b}</li>
+                </ul>
+            </p>
+            <p>This is a new way to write the concat() function, if you wanna look it up. Make sure that the array with the 
+                values you want to keep is the last one. 
+            </p>
+
+            <h3>Step 3: use the new array</h3>
+            <p>When I now has the c-array, I will use those keys and values to a) build the website layout, and b) make rules
+                for what happens when someone interact with the website. I should probably now mention that my b-array holds about
+                500 different objects, which means 500 different websites. I have calculated that I need about 12 different layouts,
+                and all builds with changing the variables, and use the c array for this.
+            </p>
+            <p>I have manage to code the layout problem, but I really feel like I have used some old-fashioned code for it. 
+                I will probably use some of the new ways we have learned with use of arrows and ternary gonna make it easier, 
+                but still I think I need to learn more. But I at least manage to: 
+                <ul>
+                    <li>Build the different layouts</li>
+                    <li>rendering content to the page</li>
+                </ul>
+                That last one bothers me. I am able to, lets say put an image to the site. But when someone interact with it, how
+                should the code recognise what array it comes from? Because I first must put the different items to render in a new 
+                array, and These are made in the "building layout" process, and can be everything from 1 to 30 different arrays.
+            </p>
+            <p>I realized here that I still have much to learn, and after having a sneak peak on what to come later in the 
+                "Frontend Developer Career", I think using React is the solution. So I stopped working on the project right here. 
+                Another reason I stoppes, was that I discovered that my CSS skills actually was somewhat like my previous Javascript skills, 
+                I not bits of it, and the websites i already have made is made by trying and failing. On to CSS then, and optimistic as I 
+                am, I went stright for Module 6: Responsive design. 
+            </p>
+            <p>Next to come: Module 6, WTF !?</p>
+            
+            <h3 class="recent-post">Recent posts</h3>
+
+        </article>
+
+
+        
+        <article id="article">
+           
+        </article>
+        <div id="btn-container-small">
+            <button id="btn-small" class="small" data-btn="add">View More</button>
+        </div>
+
+        <footer>
+            <p class="footer-text">My Learning Journal</p>
+            <span class="copyright">Copyright ©2022</span>
+                
+            </p>
+
+        </footer>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
