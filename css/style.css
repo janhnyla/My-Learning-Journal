@@ -87,7 +87,7 @@ nav {
    color: #fff;
     justify-content: space-around;
     align-items: center;
-    padding: 0 1em;
+    padding: 0 0.5em;
 }
 
 .nav-sites {
@@ -296,6 +296,7 @@ footer{
 
     nav {
         justify-content: space-between;
+        padding: 0 2em;
     }
     .hero {
         width: 100%;
