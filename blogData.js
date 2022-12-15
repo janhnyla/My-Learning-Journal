@@ -2,6 +2,15 @@
 //make sure you change the url on the post that previous was on top.
 
 export const blogs  = [
+    {
+        name: 'blog_10',
+        url: 'blog_10.html',
+        image: 'blog-image-01.png',
+        alt: 'A picture describing blog post 10, about basic React',
+        date: 'December 15, 2022',
+        heading: 'Module 11: React basics',
+        text: 'React is hard to learn, but I see that in the next weeks or so, I should come to the conclution that React is the thing for me! I think?'
+    },
      {
         name: 'blog_9',
         url: 'blog_9.html',
