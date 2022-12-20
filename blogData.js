@@ -3,6 +3,15 @@
 
 export const blogs  = [
     {
+        name: 'blog_11',
+        url: 'blog_11.html',
+        image: 'blog-image-11.png',
+        alt: 'A christmas picture, since it is soon x-mas',
+        date: 'December 20, 2022',
+        heading: 'Module 11: React basics complete',
+        text: 'I have now been through Module 11 at least twice, and I tell you: it is hard. so much different from regular javascript. But: I managed the final soloproject!'
+    },
+    {
         name: 'blog_10',
         url: 'blog_10.html',
         image: 'blog-image-01.png',
